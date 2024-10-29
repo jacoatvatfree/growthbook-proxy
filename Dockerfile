@@ -20,7 +20,7 @@ RUN \
   && yarn install --frozen-lockfile --production=true --ignore-optional
 
 # Directory with build info (git commit sha, build date)
-COPY buildinfo* ./buildinfo
+# COPY buildinfo* ./buildinfo
 
 EXPOSE 3300
 CMD ["yarn","start"]
