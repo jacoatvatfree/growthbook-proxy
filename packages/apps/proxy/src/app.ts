@@ -52,14 +52,14 @@ const defaultContext: Context = {
     expiresTTL: 10 * 60, // 10 min,
     allowStale: true,
   },
-  enableHealthCheck: true,
-  enableCors: true,
+  enableHealthCheck: false,
+  enableCors: false,
   enableAdmin: false,
   enableEventStream: true,
   enableEventStreamHeaders: true,
   enableRemoteEval: true,
   enableStickyBucketing: false,
-  proxyAllRequests: false,
+  proxyAllRequests: true,
 };
 
 export const growthBookProxy = async (
